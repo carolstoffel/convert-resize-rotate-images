@@ -18,4 +18,4 @@ for file in files:
         with Image.open(file) as im:
             im = im.rotate(270).resize((128, 128)).convert("RGB")
             im.save(os.path.join(dest, out))
-            print(im.size, im.format)
+

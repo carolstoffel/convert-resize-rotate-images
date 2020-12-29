@@ -3,13 +3,10 @@ from PIL import Image
 import os
 import shutil
 import sys
-dir = os.chdir('/home/student-03-33f73cf8f25b/images')
-dest = '/opt/icons'
+dir = os.chdir('DIGITE A PASTA DE ORIGEM')
+dest = 'DIGITE A PASTA DE DESINO'
 files = os.listdir()
-d = '/home/student-03-33f73cf8f25b/images'
-
 for file in files:
-    # print('teste')
     try:
         file, extension = os.path.splitext(file)
         out = file + '.jpeg'
